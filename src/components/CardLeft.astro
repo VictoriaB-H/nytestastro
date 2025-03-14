@@ -1,0 +1,48 @@
+---
+const { overskrift, skrift, knap } = Astro.props;
+---
+
+<article>
+  <h3>{overskrift}</h3>
+  <p>{skrift}</p>
+  <div>{knap}</div>
+</article>
+
+<style>
+  article {
+    background-color: #232323;
+    border-radius: 6%;
+    max-width: 94%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-size: 0.9rem;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  p {
+    font-size: 0.8rem;
+    padding-left: 15px;
+    color: rgb(225, 225, 225);
+  }
+
+  div {
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 90px;
+    color: black;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 900;
+    margin-top: 25px;
+  }
+  div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+  }
+</style>
