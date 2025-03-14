@@ -7,8 +7,16 @@ import CardLeft from "../components/CardLeft.astro";
 
 <Layout>
   <header>
-    <img class="logo" src="/public/img/logo.png" alt="" />
-    <img class="home_btn" src="/public/img/logo.png" alt="" />
+    <img class="logo" src="/img/logo.png" alt="" />
+    <img class="home_btn" src="img/home_btn.svg" alt="" />
+    <div class="searchbar">Hvad vil du afspille?</div>
+    <nav>
+      <ul>
+        <li>Premium</li>
+        <li>Support</li>
+        <li>Download</li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="sidebar-left">
@@ -77,12 +85,6 @@ import CardLeft from "../components/CardLeft.astro";
           navn="Billie Eilish"
           kunstner="Kunstner"
         />
-        <Card
-          class="card"
-          image="https://via.assets.so/album.png?id=7&q=95&w=360&h=360&fit=fill"
-          navn="Ed Sheeran"
-          kunstner="Kunstner"
-        />
       </article>
       <h2>Populære album og singler</h2>
       <article class="album">
@@ -111,11 +113,7 @@ import CardLeft from "../components/CardLeft.astro";
           navn="Kendrick Lamar"
           kunstner="Kunstner"
         />
-        <Card2
-          image="https://picsum.photos/id/76/150/150"
-          navn="Billie Eilish"
-          kunstner="Kunstner"
-        />
+
         <Card2
           image="https://picsum.photos/id/240/150/150"
           navn="Ed Sheeran"
@@ -154,11 +152,6 @@ import CardLeft from "../components/CardLeft.astro";
           navn="Billie Eilish"
           kunstner="Kunstner"
         />
-        <Card2
-          image="https://picsum.photos/id/240/150/150"
-          navn="Ed Sheeran"
-          kunstner="Kunstner"
-        />
       </article>
       <h2>Fremhævede hitlister</h2>
       <article class="album">
@@ -172,11 +165,7 @@ import CardLeft from "../components/CardLeft.astro";
           navn="Rihanna"
           kunstner="Kunstner"
         />
-        <Card2
-          image="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill"
-          navn="Tobias Rahim"
-          kunstner="Kunstner"
-        />
+
         <Card2
           image="https://picsum.photos/id/65/150/150"
           navn="The Weeknd"
@@ -225,11 +214,7 @@ import CardLeft from "../components/CardLeft.astro";
           navn="Kendrick Lamar"
           kunstner="Kunstner"
         />
-        <Card2
-          image="https://picsum.photos/id/76/150/150"
-          navn="Billie Eilish"
-          kunstner="Kunstner"
-        />
+
         <Card2
           image="https://picsum.photos/id/240/150/150"
           navn="Ed Sheeran"
@@ -246,6 +231,30 @@ import CardLeft from "../components/CardLeft.astro";
     max-width: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    color: rgb(169, 169, 169);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 870px;
+    gap: 20px;
+    margin-bottom: -30px;
+    margin-top: 10px;
+  }
+
+  nav li {
+    cursor: pointer;
+  }
+  nav li:hover {
+    color: white;
+    transform: scale(1.03);
   }
   .medlemsliste,
   .album {
