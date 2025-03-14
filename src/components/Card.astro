@@ -1,0 +1,20 @@
+---
+const { navn, email, rolle, billede } = Astro.props;
+---
+
+<article>
+  <img src={`img/${billede}`} alt={navn} />
+  <h3>{navn}</h3>
+  <p>{email}</p>
+  <p>{rolle}</p>
+</article>
+
+<style>
+  article {
+    background-color: bisque;
+    padding: 0.5rem;
+  }
+  img {
+    max-width: 50%;
+  }
+</style>

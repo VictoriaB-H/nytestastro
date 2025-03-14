@@ -1,11 +1,284 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Card2 from "../components/Card2.astro";
+import CardLeft from "../components/CardLeft.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <header>
+    <img class="logo" src="/public/img/logo.png" alt="" />
+    <img class="home_btn" src="/public/img/logo.png" alt="" />
+  </header>
+  <main>
+    <section class="sidebar-left">
+      <h1>Dit bibliotek</h1>
+      <article>
+        <CardLeft
+          overskrift="Opret din første playliste"
+          skrift="Det er nemt - vi skal nok hjælpe dig"
+          knap="Opret playliste"
+        />
+      </article>
+      <article>
+        <CardLeft
+          overskrift="Lad os finde nogle podcasts, du kan følge"
+          skrift="Vi holder sig orienteret om nye episoder"
+          knap="Udforsk podcasts"
+        />
+      </article>
+      <p>
+        Jura Sikkerhed og Privatlivscenter Privatlivspolitik Cookieindstillinger
+        Om reklamer Handicapadgang
+      </p>
+      <div class="cookies">Cookies</div>
+      <button class="sprog-btn">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/80/Globe_icon.svg"
+          alt=""
+        />
+        Dansk
+      </button>
+    </section>
+    <section class="sidebar-right">
+      <h2>Populære kunstnere</h2>
+      <article class="medlemsliste">
+        <Card
+          image="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill"
+          navn="Lady Gaga"
+          kunstner="Kunstner"
+        />
+        <Card
+          image="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+          navn="Rihanna"
+          kunstner="Kunstner"
+        />
+        <Card
+          class="card"
+          image="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+          navn="Tobias Rahim"
+          kunstner="Kunstner"
+        />
+        <Card
+          class="card"
+          image="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+          navn="The Weeknd"
+          kunstner="Kunstner"
+        />
+        <Card
+          class="card"
+          image="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+          navn="Kendrick Lamar"
+          kunstner="Kunstner"
+        />
+        <Card
+          class="card"
+          image="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill"
+          navn="Billie Eilish"
+          kunstner="Kunstner"
+        />
+        <Card
+          class="card"
+          image="https://via.assets.so/album.png?id=7&q=95&w=360&h=360&fit=fill"
+          navn="Ed Sheeran"
+          kunstner="Kunstner"
+        />
+      </article>
+      <h2>Populære album og singler</h2>
+      <article class="album">
+        <Card2
+          image="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"
+          navn="Lady Gaga"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+          navn="Rihanna"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill"
+          navn="Tobias Rahim"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/65/150/150"
+          navn="The Weeknd"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/68/150/150"
+          navn="Kendrick Lamar"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/76/150/150"
+          navn="Billie Eilish"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/240/150/150"
+          navn="Ed Sheeran"
+          kunstner="Kunstner"
+        />
+      </article>
+      <h2>Populær radio</h2>
+      <article class="album">
+        <Card2
+          image="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"
+          navn="Lady Gaga"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+          navn="Rihanna"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill"
+          navn="Tobias Rahim"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/65/150/150"
+          navn="The Weeknd"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/68/150/150"
+          navn="Kendrick Lamar"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/76/150/150"
+          navn="Billie Eilish"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/240/150/150"
+          navn="Ed Sheeran"
+          kunstner="Kunstner"
+        />
+      </article>
+      <h2>Fremhævede hitlister</h2>
+      <article class="album">
+        <Card2
+          image="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"
+          navn="Lady Gaga"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+          navn="Rihanna"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill"
+          navn="Tobias Rahim"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/65/150/150"
+          navn="The Weeknd"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/68/150/150"
+          navn="Kendrick Lamar"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/76/150/150"
+          navn="Billie Eilish"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/240/150/150"
+          navn="Ed Sheeran"
+          kunstner="Kunstner"
+        />
+      </article>
+      <h2>Sov godt🌛✨</h2>
+      <article class="album">
+        <Card2
+          image="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"
+          navn="Lady Gaga"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+          navn="Rihanna"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill"
+          navn="Tobias Rahim"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/65/150/150"
+          navn="The Weeknd"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/68/150/150"
+          navn="Kendrick Lamar"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/76/150/150"
+          navn="Billie Eilish"
+          kunstner="Kunstner"
+        />
+        <Card2
+          image="https://picsum.photos/id/240/150/150"
+          navn="Ed Sheeran"
+          kunstner="Kunstner"
+        />
+      </article>
+    </section>
+  </main>
+  <footer></footer>
 </Layout>
+
+<style>
+  main {
+    max-width: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .medlemsliste,
+  .album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+    margin-left: 2%;
+  }
+  h1 {
+    padding-left: 35px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: rgb(169, 169, 169);
+  }
+  h2 {
+    padding-left: 2%;
+  }
+  h2:hover {
+    text-decoration: underline;
+  }
+  p {
+    color: rgb(169, 169, 169);
+    margin: 30px;
+    margin-top: 45px;
+    word-spacing: 5px;
+    line-height: 2.7;
+    margin-bottom: 7px;
+  }
+  .cookies {
+    margin-left: 30px;
+  }
+  .cookies:hover {
+    margin-left: 30px;
+    text-decoration: underline;
+  }
+</style>
